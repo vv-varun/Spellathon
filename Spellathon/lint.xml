@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription" severity="ignore" />
+    <issue id="IconDipSize">
+        <ignore path="res\drawable-xhdpi\one_star.png" />
+        <ignore path="res\drawable-xhdpi\sample.png" />
+        <ignore path="res\drawable-xhdpi\three_star.png" />
+        <ignore path="res\drawable-xhdpi\two_star.png" />
+        <ignore path="res\drawable-xhdpi\zero_star.png" />
+    </issue>
+    <issue id="IconDuplicatesConfig">
+        <ignore path="res\drawable-xhdpi\one_star.png" />
+        <ignore path="res\drawable-xhdpi\sample.png" />
+        <ignore path="res\drawable-xhdpi\three_star.png" />
+        <ignore path="res\drawable-xhdpi\two_star.png" />
+        <ignore path="res\drawable-xhdpi\zero_star.png" />
+    </issue>
+    <issue id="NestedWeights">
+        <ignore path="res\layout-sw600dp\main.xml" />
+    </issue>
+    <issue id="Overdraw" severity="ignore" />
+</lint>

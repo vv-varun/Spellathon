@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.varunverma.spellathon"
+    android:installLocation="preferExternal"
+    android:versionCode="3"
+    android:versionName="2.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:theme="@style/SpellathonTheme"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        
+        <activity
+            android:name=".ui.Main"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ui.Settings"
+            android:exported="false"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.SETTINGS" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ui.GameUI"
+            android:exported="false"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.GAMEUI" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ui.GameSolution"
+            android:exported="false"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.GAME_SOLUTION" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ui.DownloadGame"
+            android:exported="false"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.GAMEDOWNLOAD" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ui.DisplayInfo"
+            android:exported="false"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.INFO" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ui.Example"
+            android:exported="false"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.EXAMPLE" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ui.Eula"
+            android:exported="false"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.EULA" />
+            </intent-filter>
+        </activity>
+        
+    </application>
+
+</manifest>

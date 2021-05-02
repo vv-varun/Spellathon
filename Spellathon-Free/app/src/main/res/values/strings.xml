@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Spellathon</string>
+    <string name="accept_eula">I Accept</string>
+    <string name="reject_eula">I Reject</string>
+    <string name="type_word">Type word here</string>
+    <string name="expected_score">Expected Score:</string>
+    <string name="my_words">My Words</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="cancel">Cancel</string>
+    <string name="upgrade_message">To see the meaning of the words, upgrade to the Premium Version</string>
+    <string name="loading">Loading....</string>
+    <string name="ayte">Ayansh TechnoSoft</string>
+    <string name="sign_in_why">Sign in with Google to share your scores and achievements with your friends.</string>
+
+    <string name="learn_new_words">Learn new words</string>
+    <string name="learn_new_words_help">New words, with meanings and example are sent via push notifications</string>
+
+</resources>

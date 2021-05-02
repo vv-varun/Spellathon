@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/Settings"
+        android:icon="@android:drawable/ic_menu_preferences"
+        app:showAsAction="ifRoom"
+        android:title="Settings">
+    </item>
+
+    <item
+        android:id="@+id/About"
+        android:icon="@mipmap/about"
+        app:showAsAction="ifRoom"
+        android:title="About">
+    </item>
+
+    <item android:id="@+id/TryPremium"
+        android:title="Try Premium Features">
+    </item>
+
+    <item android:id="@+id/NewFeatures"
+        android:title="What's New">
+    </item>
+
+    <item android:id="@+id/ShowEula"
+        android:title="Terms / Conditions">
+    </item>
+
+</menu>

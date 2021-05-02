@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Spellathon</string>
+    <string name="accept_eula">I Accept</string>
+    <string name="reject_eula">I Reject</string>
+    <string name="type_word">Type word here</string>
+    <string name="expected_score">Expected Score:</string>
+    <string name="my_words">My Words</string>
+    <string name="show_example">Show Example at Start</string>
+	<string name="purge_completed">Purge completed games</string>
+	
+</resources>

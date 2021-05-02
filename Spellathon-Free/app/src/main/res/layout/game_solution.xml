@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10sp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/upgrade_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/upgrade_message"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <include layout="@layout/switch_button" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/grey" />
+
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5sp"
+        android:divider="@color/black"
+        android:dividerHeight="1sp"
+        android:fastScrollEnabled="true" >
+    </ListView>
+
+</LinearLayout>

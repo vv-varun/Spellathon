@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4571712644338430/3401097501" >
+    </com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:id="@+id/greeting_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_toolbar"
+        android:text="Hi !"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginTop="10sp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/adView"
+        android:layout_below="@id/greeting_message"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/random_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_input_add"
+            android:drawablePadding="5sp"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:text="New Game"/>
+
+        <Button
+            android:id="@+id/example"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/help"
+            android:drawablePadding="5sp"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:text="How to Play" />
+
+        <Button
+            android:id="@+id/achievements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/star_big_on"
+            android:drawablePadding="5sp"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:text="Achievements" />
+
+        <Button
+            android:id="@+id/leaderboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_menu_sort_by_size"
+            android:drawablePadding="5sp"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:text="Top Players" />
+
+        <Button
+            android:id="@+id/app_purchase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/buy"
+            android:drawablePadding="5sp"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:text="Upgrade" />
+
+        <Button
+            android:id="@+id/sign_out_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+            android:drawablePadding="5sp"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:text="Sign Out" />
+
+    </LinearLayout>
+
+</RelativeLayout>

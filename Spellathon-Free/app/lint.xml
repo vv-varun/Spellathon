@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="ContentDescription" severity="ignore" />
+    <issue id="IconDipSize" severity="ignore" />
+    <issue id="IconDuplicatesConfig" severity="ignore" />
+    <issue id="NestedWeights">
+        <ignore path="res/layout-sw600dp/main.xml" />
+    </issue>
+    <issue id="NewApi">
+        <ignore path="src/org/varunverma/free/spellathon/ui/DisplayInfo.java" />
+        <ignore path="src/org/varunverma/free/spellathon/ui/DownloadGame.java" />
+        <ignore path="src/org/varunverma/free/spellathon/ui/Example.java" />
+        <ignore path="src/org/varunverma/free/spellathon/ui/GameSolution.java" />
+        <ignore path="src/org/varunverma/free/spellathon/ui/GameUI.java" />
+        <ignore path="src/org/varunverma/free/spellathon/ui/Settings.java" />
+    </issue>
+    <issue id="Overdraw" severity="ignore" />
+    <issue id="SelectableText" severity="ignore" />
+    <issue id="SetJavaScriptEnabled">
+        <ignore path="src/org/varunverma/free/spellathon/ui/DisplayInfo.java" />
+    </issue>
+    <issue id="UseSparseArrays">
+        <ignore path="src/org/varunverma/free/spellathon/Application/Application.java" />
+    </issue>
+</lint>
